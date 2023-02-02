@@ -1,0 +1,124 @@
+/*common*/
+.wd-background {
+  background-color: black;
+  color: white;
+  font-family: Arial, serif;
+  border-color: rgb(47, 51, 54);
+  border-style: solid;
+  border-width: 1px;
+  display: flow-root;
+}
+
+.wd-title-style {
+  margin-left: 16px;
+  margin-top: 12px;
+  font-size: 20px;
+}
+
+.wd-handle {
+  color: lightgray;
+  font-size: 13px;
+  margin-left: 16px;
+}
+
+.wd-border {
+  border-bottom: solid 1px rgb(47, 51, 54);
+  padding-bottom: 0;
+}
+
+.wd-img {
+  height: 48px;
+  width: 48px;
+  border-radius: 200%;
+}
+
+/*common*/
+.wd-grid-row {
+  clear: both;
+}
+
+.wd-one-sixth {
+  float: left;
+}
+
+.wd-five-sixth {
+  float: left;
+}
+
+.wd-img-pad {
+  margin-top: 12px;
+  margin-left: 16px;
+  margin-right: 12px;
+}
+
+.wd-author-bookmark-name {
+  font-size: 15px;
+  color: white;
+  margin-top: 12px;
+}
+
+.wd-author-bookmark-handle {
+  font-size: 15px;
+  color: lightgray;
+}
+
+.wd-tweet-content {
+  color: white;
+  font-size: 15px;
+  max-width: 506px;
+}
+
+.wd-content-div-gap {
+  margin-top: 12px;
+}
+
+.wd-article-img {
+  width: 506px;
+  height: 264px;
+  border-top-right-radius: 35px;
+  border-top-left-radius: 35px;
+}
+
+.wd-article-title {
+  font-size: 15px;
+  color: white;
+  padding: 12px;
+}
+
+.wd-article {
+  font-size: 15px;
+  color: lightgray;
+  max-width: 480px;
+}
+
+.wd-article-border {
+  max-width: 506px;
+  border-bottom: solid 1px rgb(47, 51, 54);
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  border-left: solid 1px rgb(47, 51, 54);
+  border-right: solid 1px rgb(47, 51, 54);
+  border-top: solid 1px rgb(47, 51, 54);
+  margin-top: -3px;
+}
+
+.count-padding {
+  padding-left: 12px;
+}
+
+.likes-red {
+  color: red;
+}
+
+.wd-equi-size {
+  width: 115px;
+  float: left;
+}
+
+.wd-symbols {
+  color: lightgray;
+}
+
+.wd-flow-root {
+  display: flow-root;
+}
