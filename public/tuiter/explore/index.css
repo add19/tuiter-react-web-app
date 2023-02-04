@@ -10,7 +10,7 @@
 .wd-textarea {
   background-color: darkgray;
   border-radius: 30px;
-  width: 80%;
+  width: 800px;
   height: 40px;
   float: left;
 }
@@ -20,7 +20,6 @@
 }
 
 .wd-settings {
-  padding-right: 12px;
   padding-top: 12px;
   float: right;
 }
@@ -29,7 +28,7 @@
   color: white;
 }
 
-.wd-border {
+.wd-border-color {
   border-color: rgb(47, 51, 54);
 }
 
@@ -54,23 +53,19 @@
 
 .wd-grid-row {
   clear: both;
-  /*margin: 24px*/
 }
 
 .wd-nav-div {
   margin-bottom: 12px;
   margin-top: 40px;
-  padding-bottom: 24px;
-  border-bottom: solid rgb(110, 118, 125) 20px;
+  padding-bottom: 18px;
+  border-bottom: solid rgb(59, 59, 61) 10px;
 }
 
 .wd-nav-border {
   padding: 16px;
 }
 
-.wd-top-border-gap {
-  margin-bottom: 20px;
-}
 .wd-one-sixth {
   width: 16%;
   float: left;
@@ -78,17 +73,19 @@
 
 .wd-selected-item {
   color: rgb(29,161,242);
+  font-size: 15px;
 }
 
 .wd-unselected-item {
   color: rgb(110, 118, 125);
+  font-size: 15px;
 }
 
 .wd-border-link {
   border-color: rgb(29,161,242);
   border-bottom: solid;
   border-width: 3px;
-  padding-bottom: 22px;
+  padding-bottom: 16px;
 }
 
 .wd-trending {
