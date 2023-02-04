@@ -213,6 +213,14 @@ p#id-selector-2 {
   background-color: red;
   color: white;
 }
+
+.rotate-list-counter {
+  transform: rotate(-12deg);
+  width: 100px;
+  background-color: orange;
+  color: white;
+}
+
 .rotate-list-items li {
   width: 100px;
   text-align: right;
@@ -233,6 +241,10 @@ p#id-selector-2 {
 
 .rotate-image {
   transform: rotate(-10deg);
+}
+
+.rotate-image-clockwise {
+  transform: rotate(10deg);
 }
 
 .rotate-table {
@@ -260,11 +272,24 @@ p#id-selector-2 {
   height: 200px;
 }
 
+.gradients-linear-orig {
+  background: linear-gradient(yellow, red);
+  width: 200px;
+  height: 200px;
+}
+
 .gradients-radial {
   background: radial-gradient(red, yellow);
   width: 200px;
   height: 200px;
 }
+
+.gradients-radial-orig {
+  background: radial-gradient(yellow, green);
+  width: 200px;
+  height: 200px;
+}
+
 
 .gradients-positioned {
   background:
@@ -274,6 +299,17 @@ p#id-selector-2 {
   height: 200px;
   color: white;
 }
+
+.gradients-positioned-different {
+  background:
+      radial-gradient(
+          at top right, green, red);
+  width: 200px;
+  height: 200px;
+  color: white;
+}
+
+
 
 .animation-keyframes {
   position: relative;
@@ -317,6 +353,54 @@ p#id-selector-2 {
     width: 200px;
     height: 200px;
     background-color: red;
+    color: white;
+  }
+}
+
+.animation-keyframes-play {
+  position: relative;
+  top: 0px;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 7s;
+  animation-name: slidein-play;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  color: white;
+}
+
+@keyframes slidein-play {
+  from {
+    position: relative;
+    top: 0px;
+    font-size: 100%;
+    margin-left: 100%;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    color: green;
+  } /* continued on right */
+
+  50% {
+    position: relative;
+    top: -200px;
+    font-size: 300%;
+    margin-left: 25%;
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+    color: orange;
+  }
+
+  to {
+    position: relative;
+    top: 0px;
+    font-size: 100%;
+    margin-left: 0%;
+    width: 200px;
+    height: 200px;
+    background-color: gray;
     color: white;
   }
 }
@@ -428,31 +512,31 @@ and (max-width: 600px) {
     background-color: yellow;
   }
   .media-query {
-    background-color: red;
+    background-color: orange;
     color: white;
   }
 }
 
-@media (min-width: 600px)
-and (max-width: 1200px) {
+@media (min-width: 650px)
+and (max-width: 1250px) {
   body {
-    background-color: blue;
+    background-color: lightblue;
     color: white;
   }
   .media-query {
-    background-color: yellow;
+    background-color: coral;
     color: black;
   }
 }
 
-@media (min-width: 1200px)
+@media (min-width: 1250px)
 and (max-width: 1800px) {
   body {
     background-color: red;
     color: white;
   }
   .media-query {
-    background-color: blue;
-    color: white;
+    background-color: palevioletred;
+    color: black;
   }
 }
