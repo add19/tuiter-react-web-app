@@ -136,3 +136,9 @@
   border-width: 2px;
   border-color: rgb(47, 51, 54);
 }
+
+.wd-img {
+  height: 48px;
+  width: 48px;
+  border-radius: 200%;
+}
