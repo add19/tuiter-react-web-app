@@ -13,9 +13,9 @@
 
 </head>
 <body>
-  <div class="mt-2 row">
-    <div class="col-xxl-3 d-flex justify-content-center">
-      <div style="width: 50%">
+  <div class="mt-2 row container-fluid">
+    <div class="col-xxl-2">
+      <div >
         <ul class="list-group">
           <li class="list-group-item"><i class="fab fa-twitter fa-1x"></i></li>
           <li class="list-group-item"><i class="fa-solid fa-house pe-2"></i> Home</li>
@@ -26,19 +26,23 @@
           <li class="list-group-item"><i class="fa-solid fa-list pe-2"></i> Lists</li>
           <li class="list-group-item"><i class="fa-solid fa-user pe-2"></i> Profile</li>
           <li class="list-group-item"><i class="fa-solid fa-ellipsis pe-2"></i> More</li>
+          <li class="list-group-item border-0 p-0 mt-2"><button type="button" style="width: 100%" class="btn btn-primary rounded-pill">Primary</button></li>
         </ul>
       </div>
-      <div>
-        <button type="button" class="btn btn-primary">Primary</button>
-      </div>
     </div>
-    <div class="mt-2 col-xxl-6 ">
-      <div class="form-group has-feedback">
-        <div class="input-group">
-          <i class="fa fa-search" style="margin-top: 10px"></i>
-          <input type="text" class="form-control" style="border-radius: 35px;" placeholder="Search...">
+    <div class="mt-2 col-xxl-7 ">
+      <div class="row">
+        <div class="col-xxl-11">
+          <div class="input-group mb-3 border rounded-pill">
+            <span class="input-group-text bg-transparent border-0" id="basic-addon1"><i class="fa fa-search p-1"></i></span>
+            <input type="text" class="form-control ps-0 border-0 bg-transparent" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+          </div>
+        </div>
+        <div class="col-xxl-1 pt-1">
+          <div><i class="fa-solid fa-gear text-primary fa-2x"></i></div>
         </div>
       </div>
+
       <div>
         <ul class="mt-2 nav nav-tabs">
           <li class="nav-item">
@@ -61,7 +65,7 @@
       <div class="card bg-dark text-white mt-2">
         <img class="card-img" src="spacex.webp" alt="Card image">
         <div class="card-img-overlay">
-          <h3 class="card-title" style="position: absolute; bottom: 0px; left: 8px">SpaceX's Starship</h3>
+          <h1 class="card-title" style="margin-top: 60%;">SpaceX's Starship</h1>
         </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">
@@ -114,108 +118,51 @@
           </li>
         </ul>
       </div>
-<!--      <div class="card mt-2">-->
-<!--        <img src="spacex.webp" class="card-img-top" alt="...">-->
-<!--        <div class="card-img-overlay">-->
-<!--          <h5 class="card-title" style="position: absolute; bottom: 8px; left: 16px">SpaceX's Starship</h5>-->
-<!--        </div>-->
-<!--        <div class="card-body">-->
-<!--          <h5 class="card-title">Card title</h5>-->
-<!--          <p class="card-text">-->
-<!--            Some quick example text to build on the card-->
-<!--            title and make up the bulk of the card's content.</p>-->
-<!--          <a href="#" class="btn btn-primary">Go somewhere</a>-->
-<!--        </div>-->
-<!--      </div>-->
-
     </div>
-    <div class="mt-2 col-xxl-3 d-flex justify-content-center">
-      <div style="width: 80%; margin-right:20px">
+    <div class="mt-2 col-xxl-3 ">
+      <div >
         <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <h6 class="mb-0">Who to Follow</h6>
+          </li>
           <li class="list-group-item">
-            <h6>Who to Follow</h6>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            <div class="row">
-              <div style="width: 60px">
-                <img src="java.png" class="wd-img">
-              </div>
-              <div style="width: 60px">
-                <span>Java</span>
-                <span>@Java</span>
-              </div>
+            <div class="row align-items-center">
+              <div class="col-xxl-2"><img src="java.png" class="wd-img"></div>
+              <div class="col-xxl-7"><span>Java <i class="fa-solid fa-circle-check ps-1"></i></span><br><span>@java</span></div>
+              <div class="col-xxl-3 p-0"><span class=" bg-primary rounded-pill"><button type="button" class="btn btn-primary" style="border-radius: 30px">Follow</button></span></div>
             </div>
-            <span class=" bg-primary rounded-pill"><button type="button" class="btn btn-primary" style="border-radius: 30px">Follow</button></span>
           </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            <div class="row">
-              <div style="width: 60px">
-                <img src="relativity.jpeg" class="wd-img">
-              </div>
-              <div style="width: 60px">
-                <span>Relativity</span>
-                <span>@relativity</span>
-              </div>
+          <li class="list-group-item">
+            <div class="row align-items-center">
+              <div class="col-xxl-2"><img src="relativity.jpeg" class="wd-img"></div>
+              <div class="col-xxl-7"><span>Relativity <i class="fa-solid fa-circle-check ps-1"></i></span><br><span>@relativity</span></div>
+              <div class="col-xxl-3 p-0"><span class=" bg-primary rounded-pill"><button type="button" class="btn btn-primary" style="border-radius: 30px">Follow</button></span></div>
             </div>
-            <span class=" bg-primary rounded-pill"><button type="button" class="btn btn-primary" style="border-radius: 30px">Follow</button></span>
           </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            <div class="row">
-              <div style="width: 60px">
-                <img src="virgin.png" class="wd-img">
-              </div>
-              <div style="width: 60px">
-                <span>Virgin Galactic</span>
-                <span>@virgingalactic</span>
-              </div>
+          <li class="list-group-item">
+            <div class="row align-items-center">
+              <div class="col-xxl-2"><img src="virgin.png" class="wd-img"></div>
+              <div class="col-xxl-7"><span>Virgin Galactic <i class="fa-solid fa-circle-check ps-1"></i></span><br><span>@virgingalactic</span></div>
+              <div class="col-xxl-3 p-0"><span class=" bg-primary rounded-pill"><button type="button" class="btn btn-primary" style="border-radius: 30px">Follow</button></span></div>
             </div>
-            <span class=" bg-primary rounded-pill"><button type="button" class="btn btn-primary" style="border-radius: 30px">Follow</button></span>
           </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            <div class="row">
-              <div style="width: 60px">
-                <img src="download.png" class="wd-img">
-              </div>
-              <div style="width: 60px">
-                <span>NASA</span>
-                <span>@NASA</span>
-              </div>
+          <li class="list-group-item">
+            <div class="row align-items-center">
+              <div class="col-xxl-2"><img src="download.png" class="wd-img"></div>
+              <div class="col-xxl-7"><span>NASA <i class="fa-solid fa-circle-check ps-1"></i></span><br><span>@NASA</span></div>
+              <div class="col-xxl-3 p-0"><span class=" bg-primary rounded-pill"><button type="button" class="btn btn-primary" style="border-radius: 30px">Follow</button></span></div>
             </div>
-            <span class=" bg-primary rounded-pill"><button type="button" class="btn btn-primary" style="border-radius: 30px">Follow</button></span>
           </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            <div class="row">
-              <div style="width: 60px">
-                <img src="tesla.jpeg" class="wd-img">
-              </div>
-              <div style="width: 60px">
-                <span>NASA</span>
-                <span>@NASA</span>
-              </div>
+          <li class="list-group-item  ">
+            <div class="row align-items-center">
+              <div class="col-xxl-2"><img src="tesla.jpeg" class="wd-img"></div>
+              <div class="col-xxl-7"><span>Tesla <i class="fa-solid fa-circle-check ps-1"></i></span><br><span>@Tesla</span></div>
+              <div class="col-xxl-3 p-0"><span class=" bg-primary rounded-pill"><button type="button" class="btn btn-primary" style="border-radius: 30px">Follow</button></span></div>
             </div>
-            <span class=" bg-primary rounded-pill"><button type="button" class="btn btn-primary" style="border-radius: 30px">Follow</button></span>
           </li>
-
-<!--          <li class="list-group-item d-flex justify-content-between align-items-center">-->
-<!--            <div class="row">-->
-<!--              <div class="col-4">-->
-<!--                <img src="relativity.jpeg" class="wd-img">-->
-<!--              </div>-->
-<!--              <div class="col-4">-->
-<!--                <span>Relativity</span>-->
-<!--                <span>@relativitySpace</span>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            <span class=" bg-primary rounded-pill"><button type="button" class="btn btn-primary" style="border-radius: 30px">Follow</button></span>-->
-<!--          </li>-->
-<!--          <li class="list-group-item d-flex justify-content-between align-items-center">-->
-<!--            A third list item-->
-<!--            <span class=" bg-primary rounded-pill"><button type="button" class="btn btn-primary" style="border-radius: 30px">Follow</button></span>-->
-<!--          </li>-->
         </ul>
       </div>
     </div>
-
   </div>
 
 <!--  <div class="wd-search-div">-->
