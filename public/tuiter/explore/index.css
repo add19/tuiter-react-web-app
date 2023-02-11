@@ -85,7 +85,7 @@
 
 .wd-unselected-item {
   color: rgb(110, 118, 125);
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -154,6 +154,7 @@
 .wd-remove-border-nav-li {
   border: none;
   font-family: Arial, sans-serif;
+  justify-content: space-between;
 }
 
 .wd-override-active-li-item {
@@ -183,7 +184,7 @@
 }
 
 .wd-who-to-follow {
-  background-color: #f1f1f1;
+  background-color: #f6f5f5;
 }
 
 .wd-who-to-follow-border {
@@ -197,4 +198,9 @@
 .wd-black-btn {
   background-color: black;
   color: white;
+}
+
+.wd-border-center {
+  border-left: 1px solid #f6f5f5;
+  border-right: 1px solid #f6f5f5;
 }
