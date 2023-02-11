@@ -1,7 +1,7 @@
 .wd-background {
   background-color: black;
   color: white;
-  font-family: Arial, serif;
+  font-family: "Helvetica Neue", serif;
   border-color: rgb(47, 51, 54);
   border-style: solid;
   border-width: 1px;
@@ -73,12 +73,20 @@
 
 .wd-selected-item {
   color: rgb(29,161,242);
-  font-size: 15px;
+  font-weight: bolder;
+}
+
+.nav-item.override-wd-selected-item-border {
+  border-bottom: 2px;
+  border-color: rgb(29,161,242) !important;
+  border-bottom: solid;
+  border-width: 3px;
 }
 
 .wd-unselected-item {
   color: rgb(110, 118, 125);
   font-size: 15px;
+  font-weight: bold;
 }
 
 .wd-border-link {
@@ -112,7 +120,7 @@
   width: 100px;
   height: 100px;
   float: right;
-  margin: 10px 16px 10px 10px;
+  margin: 10px 0px 10px 10px;
 }
 
 .wd-grid-two-third {
@@ -141,4 +149,52 @@
   height: 48px;
   width: 48px;
   border-radius: 200%;
+}
+
+.wd-remove-border-nav-li {
+  border: none;
+  font-family: Arial, sans-serif;
+}
+
+.wd-override-active-li-item {
+  text-decoration: black;
+  font-weight: bold;
+}
+
+.wd-override-active-li-item {
+  text-decoration: black;
+  font-weight: bold;
+}
+
+.wd-twitter-button-theme {
+  color: rgb(29,161,242);
+}
+
+.wd-twitter-button {
+  background-color: rgb(29,161,242);
+}
+
+.wd-override-inactive-li-item {
+  color: rgb(47, 51, 54);
+}
+
+.wd-search-bar-override {
+  background-color: #f1f1f1;
+}
+
+.wd-who-to-follow {
+  background-color: #f1f1f1;
+}
+
+.wd-who-to-follow-border {
+  border-radius: 20px;
+}
+
+.wd-li-content-padding {
+  padding-bottom: 10px;
+}
+
+.wd-black-btn {
+  background-color: black;
+  color: white;
 }

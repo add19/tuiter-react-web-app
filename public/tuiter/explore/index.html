@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Tuiter Explore</title>
-  <link href="index.css" rel="stylesheet">
 <!--  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"-->
 <!--        rel="stylesheet"/>-->
 <!--  <script src="https://kit.fontawesome.com/93dd8195f9.js" crossorigin="anonymous"></script>-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
         rel="stylesheet"/>
   <script src="https://kit.fontawesome.com/93dd8195f9.js" crossorigin="anonymous"></script>
+  <link href="index.css" rel="stylesheet">
 
 </head>
 <body>
@@ -17,48 +17,50 @@
     <div class="mt-2 col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-2">
       <div >
         <ul class="list-group ">
-          <li class="list-group-item "><i class="fab fa-twitter fa-1x "></i></li>
-          <li class="list-group-item"><i class="fa-solid fa-house pe-2"></i><span class="d-none d-xl-inline-block">Home</span></li>
-          <li class="list-group-item active"><i class="fa-solid fa-hashtag pe-2"></i> <span class="d-none d-xl-inline-block">Explore</span></li>
-          <li class="list-group-item"><i class="fa-solid fa-bell pe-2"></i> <span class="d-none d-xl-inline-block">Notifications</span></li>
-          <li class="list-group-item"><i class="fa-solid fa-envelope pe-2"></i> <span class="d-none d-xl-inline-block">Messages</span></li>
-          <li class="list-group-item"><i class="fa-solid fa-bookmark pe-2"></i> <span class="d-none d-xl-inline-block">Bookmarks</span></li>
-          <li class="list-group-item"><i class="fa-solid fa-list pe-2"></i> <span class="d-none d-xl-inline-block">Lists</span></li>
-          <li class="list-group-item"><i class="fa-solid fa-user pe-2"></i> <span class="d-none d-xl-inline-block">Profile</span></li>
-          <li class="list-group-item"><i class="fa-solid fa-ellipsis pe-2"></i> <span class="d-none d-xl-inline-block">More</span></li>
-          <li class="list-group-item border-0 p-0 mt-2"><button type="button" style="width: 100%" class="btn btn-primary rounded-pill">Tweet</button></li>
+          <li class="list-group-item wd-remove-border-nav-li wd-override-inactive-li-item"><i class="fab fa-twitter fa-1x wd-twitter-button-theme" style="font-size: 1.5em;"></i></li>
+          <li class="list-group-item wd-remove-border-nav-li wd-override-inactive-li-item"><i class="fa-solid fa-house pe-2"></i><span class="d-none d-xl-inline-block">Home</span></li>
+          <li class="list-group-item wd-remove-border-nav-li wd-override-active-li-item"><i class="fa-solid fa-hashtag pe-2"></i> <span class="d-none d-xl-inline-block">Explore</span></li>
+          <li class="list-group-item wd-remove-border-nav-li wd-override-inactive-li-item"><i class="fa-solid fa-bell pe-2"></i> <span class="d-none d-xl-inline-block">Notifications</span></li>
+          <li class="list-group-item wd-remove-border-nav-li wd-override-inactive-li-item"><i class="fa-solid fa-envelope pe-2"></i> <span class="d-none d-xl-inline-block">Messages</span></li>
+          <li class="list-group-item wd-remove-border-nav-li wd-override-inactive-li-item"><i class="fa-solid fa-bookmark pe-2"></i> <span class="d-none d-xl-inline-block">Bookmarks</span></li>
+          <li class="list-group-item wd-remove-border-nav-li wd-override-inactive-li-item"><i class="fa-solid fa-list pe-2"></i> <span class="d-none d-xl-inline-block">Lists</span></li>
+          <li class="list-group-item wd-remove-border-nav-li wd-override-inactive-li-item"><i class="fa-solid fa-user pe-2"></i> <span class="d-none d-xl-inline-block">Profile</span></li>
+          <li class="list-group-item wd-remove-border-nav-li wd-override-inactive-li-item">
+            <span class="fa-stack fa-1x" style="font-size: 0.5em;"> <i class="fa-regular fa-circle fa-stack-2x"></i><i class="fa-solid fa-ellipsis fa-stack-1x">
+</i></span> <span class="d-none d-xl-inline-block">More</span></li>
+          <li class="list-group-item wd-remove-border-nav-li border-0 p-0 mt-2"><button type="button" style="width: 100%" class="btn btn-primary wd-twitter-button rounded-pill">Tweet</button></li>
         </ul>
       </div>
     </div>
-    <div class="mt-2 col-xxl-7 col-xl-7 col-lg-7 col-md-10 col-sm-10">
+    <div class="mt-2 col-xxl-7 col-xl-6 col-lg-7 col-md-10 col-sm-10" style="outline: 2px solid #ccc; padding: 0">
       <div class="row">
         <div class="col-11">
-          <div class="input-group mb-3 border rounded-pill">
+          <div class="input-group mb-3 border rounded-pill wd-search-bar-override">
             <span class="input-group-text bg-transparent border-0" id="basic-addon1"><i class="fa fa-search p-1"></i></span>
-            <input type="text" class="form-control ps-0 border-0 bg-transparent" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+            <input type="text" class="form-control ps-0 border-0 bg-transparent shadow-none" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
           </div>
         </div>
         <div class="col-1 pt-1">
-          <div><i class="fa-solid fa-gear text-primary fa-2x"></i></div>
+          <div><i class="fa-solid fa-gear fa-2x"></i></div>
         </div>
       </div>
 
       <div>
-        <ul class="mt-2 nav nav-tabs">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">For you</a>
+        <ul class="mt-2 nav nav-tabs wd-remove-border-nav-li">
+          <li class="nav-item override-wd-selected-item-border">
+            <a class="nav-link wd-selected-item" aria-current="page" href="#">For you</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Trending</a>
+            <a class="nav-link wd-unselected-item" href="#">Trending</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">News</a>
+            <a class="nav-link wd-unselected-item">News</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">Sports</a>
+            <a class="nav-link wd-unselected-item">Sports</a>
           </li>
           <li class="nav-item d-none d-md-block">
-            <a class="nav-link">Entertainment</a>
+            <a class="nav-link wd-unselected-item">Entertainment</a>
           </li>
         </ul>
       </div>
@@ -72,7 +74,7 @@
                 <div class="wd-trending wd-grid-row">
                   <div class="wd-grid-two-third">
                     <p class="wd-trending-subinfo mb-1" style="color: lightgray">Web Development</p>
-                    <span><b>ReactJS <i class="fa-solid fa-circle-check ps-1"></i></b></span><span style="color: lightgray; padding: 10px">-  2h</span>
+                    <span><b>ReactJS <i class="fa-solid fa-circle-check ps-1 wd-twitter-button-theme"></i></b></span><span style="color: lightgray; padding: 10px">-  2h</span>
                     <p><b>React.js is a component based front end library that makes it very easy to build single page applications or SPAs</b></p>
                   </div>
                   <div class="wd-grid-one-third">
@@ -84,7 +86,7 @@
             <div class="wd-trending wd-grid-row">
               <div class="wd-grid-two-third">
                 <p class="wd-trending-subinfo mb-1" style="color: lightgray">Web Development</p>
-                <span><b>Javascript <i class="fa-solid fa-circle-check ps-1"></i></b></span><span style="color: lightgray; padding: 10px">-  2h</span>
+                <span><b>Javascript <i class="fa-solid fa-circle-check ps-1 wd-twitter-button-theme"></i></b></span><span style="color: lightgray; padding: 10px">-  2h</span>
                 <p><b>Javascript is a programming language that run on browsers as well as desktops</b></p>
               </div>
               <div class="wd-grid-one-third">
@@ -108,7 +110,7 @@
             <div class="wd-trending wd-grid-row">
               <div class="wd-grid-two-third">
                 <p class="wd-trending-subinfo mb-1" style="color: lightgray">Web Development</p>
-                <span><b>NodeJS <i class="fa-solid fa-circle-check ps-1"></i></b></span><span style="color: lightgray; padding: 10px">-  2h</span>
+                <span><b>NodeJS <i class="fa-solid fa-circle-check ps-1 wd-twitter-button-theme"></i></b></span><span style="color: lightgray; padding: 10px">-  2h</span>
                 <p class="wd-trending-subinfo mt-2">123K Tweets</p>
               </div>
               <div class="wd-grid-one-third">
@@ -119,45 +121,45 @@
         </ul>
       </div>
     </div>
-    <div class="mt-2 col-xxl-3 col-xl-3 col-lg-4 d-none d-lg-block">
-      <div >
-        <ul class="list-group">
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            <h6 class="mb-0"><b>Who to Follow</b></h6>
+    <div class="mt-2 col-xxl-3 col-xl-4 col-lg-4 d-none d-lg-block">
+      <div>
+        <ul class="list-group wd-who-to-follow-border">
+          <li class="list-group-item wd-li-content-padding wd-who-to-follow wd-remove-border-nav-li d-flex justify-content-between align-items-center">
+            <h4 class="mb-0"><b>Who to Follow</b></h4>
           </li>
-          <li class="list-group-item">
+          <li class="list-group-item wd-li-content-padding wd-who-to-follow wd-remove-border-nav-li">
             <div class="row align-items-center">
               <div class="col-2"><img src="java.png" style="width: 48px; height: 48px; border-radius: 10px"></div>
-              <div class="col-7"><span><b>Java</b> <i class="fa-solid fa-circle-check ps-1"></i></span><br><span>@java</span></div>
-              <div class="col-3 p-0"><span class=" bg-primary rounded-pill"><button type="button" class="btn btn-primary" style="border-radius: 30px">Follow</button></span></div>
+              <div class="col-7"><span><b>Java</b> <i class="fa-solid fa-circle-check ps-1 wd-twitter-button-theme"></i></span><br><span>@java</span></div>
+              <div class="col-3 p-0"><span class=" bg-primary rounded-pill"><button type="button" class="btn wd-black-btn" style="border-radius: 30px">Follow</button></span></div>
             </div>
           </li>
-          <li class="list-group-item">
+          <li class="list-group-item wd-li-content-padding wd-who-to-follow wd-remove-border-nav-li">
             <div class="row align-items-center">
               <div class="col-2"><img src="relativity.jpeg" style="width: 48px; height: 48px; border-radius: 10px"></div>
-              <div class="col-7"><span><b>Relativity</b> <i class="fa-solid fa-circle-check ps-1"></i></span><br><span>@relativity</span></div>
-              <div class="col-3 p-0"><span class=" bg-primary rounded-pill"><button type="button" class="btn btn-primary" style="border-radius: 30px">Follow</button></span></div>
+              <div class="col-7"><span><b>Relativity</b> <i class="fa-solid fa-circle-check ps-1 wd-twitter-button-theme"></i></span><br><span>@relativity</span></div>
+              <div class="col-3 p-0"><span class=" bg-primary rounded-pill"><button type="button" class="btn wd-black-btn" style="border-radius: 30px">Follow</button></span></div>
             </div>
           </li>
-          <li class="list-group-item">
+          <li class="list-group-item wd-li-content-padding wd-who-to-follow wd-remove-border-nav-li">
             <div class="row align-items-center">
               <div class="col-2"><img src="virgin.png" style="width: 48px; height: 48px; border-radius: 10px"></div>
-              <div class="col-7"><span><b>Virgin Galactic</b> <i class="fa-solid fa-circle-check ps-1"></i></span><br><span>@virgingalactic</span></div>
-              <div class="col-3 p-0"><span class=" bg-primary rounded-pill"><button type="button" class="btn btn-primary" style="border-radius: 30px">Follow</button></span></div>
+              <div class="col-7"><span><b>Virgin Galactic</b> <i class="fa-solid fa-circle-check ps-1 wd-twitter-button-theme"></i></span><br><span>@virgingalactic</span></div>
+              <div class="col-3 p-0"><span class=" bg-primary rounded-pill"><button type="button" class="btn wd-black-btn" style="border-radius: 30px">Follow</button></span></div>
             </div>
           </li>
-          <li class="list-group-item">
+          <li class="list-group-item wd-li-content-padding wd-who-to-follow wd-remove-border-nav-li">
             <div class="row align-items-center">
               <div class="col-2"><img src="download.png" style="width: 48px; height: 48px; border-radius: 10px"></div>
-              <div class="col-7"><span><b>NASA</b> <i class="fa-solid fa-circle-check ps-1"></i></span><br><span>@NASA</span></div>
-              <div class="col-3 p-0"><span class=" bg-primary rounded-pill"><button type="button" class="btn btn-primary" style="border-radius: 30px">Follow</button></span></div>
+              <div class="col-7"><span><b>NASA</b> <i class="fa-solid fa-circle-check ps-1 wd-twitter-button-theme"></i></span><br><span>@NASA</span></div>
+              <div class="col-3 p-0"><span class=" bg-primary rounded-pill"><button type="button" class="btn wd-black-btn" style="border-radius: 30px">Follow</button></span></div>
             </div>
           </li>
-          <li class="list-group-item  ">
+          <li class="list-group-item wd-li-content-padding wd-who-to-follow wd-remove-border-nav-li">
             <div class="row align-items-center">
               <div class="col-2"><img src="tesla.jpeg" style="width: 48px; height: 48px; border-radius: 10px"></div>
-              <div class="col-7"><span><b>Tesla</b> <i class="fa-solid fa-circle-check ps-1"></i></span><br><span>@Tesla</span></div>
-              <div class="col-3 p-0"><span class=" bg-primary rounded-pill"><button type="button" class="btn btn-primary" style="border-radius: 30px">Follow</button></span></div>
+              <div class="col-7"><span><b>Tesla</b> <i class="fa-solid fa-circle-check ps-1 wd-twitter-button-theme"></i></span><br><span>@Tesla</span></div>
+              <div class="col-3 p-0"><span class=" bg-primary rounded-pill"><button type="button" class="btn wd-black-btn" style="border-radius: 30px">Follow</button></span></div>
             </div>
           </li>
         </ul>
