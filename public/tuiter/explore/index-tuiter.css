@@ -1,0 +1,144 @@
+.wd-background {
+  background-color: black;
+  color: white;
+  font-family: Arial, serif;
+  border-color: rgb(47, 51, 54);
+  border-style: solid;
+  border-width: 1px;
+}
+
+.wd-textarea {
+  background-color: darkgray;
+  border-radius: 30px;
+  width: 800px;
+  height: 40px;
+  float: left;
+}
+
+.wd-search-div {
+  padding: 16px;
+}
+
+.wd-settings {
+  padding-top: 12px;
+  float: right;
+}
+
+::placeholder {
+  color: white;
+}
+
+.wd-border-color {
+  border-color: rgb(47, 51, 54);
+}
+
+.wd-float-left {
+  float: left;
+}
+
+.wd-float-right {
+  float: right;
+}
+
+.wd-border-thin {
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: rgb(47, 51, 54);
+}
+
+.wd-float-done {
+  clear: both;
+}
+
+
+.wd-grid-row {
+  clear: both;
+}
+
+.wd-nav-div {
+  margin-bottom: 12px;
+  margin-top: 40px;
+  padding-bottom: 18px;
+  border-bottom: solid rgb(59, 59, 61) 10px;
+}
+
+.wd-nav-border {
+  padding: 16px;
+}
+
+.wd-one-sixth {
+  width: 16%;
+  float: left;
+}
+
+.wd-selected-item {
+  color: rgb(29,161,242);
+  font-size: 15px;
+}
+
+.wd-unselected-item {
+  color: rgb(110, 118, 125);
+  font-size: 15px;
+}
+
+.wd-border-link {
+  border-color: rgb(29,161,242);
+  border-bottom: solid;
+  border-width: 3px;
+  padding-bottom: 16px;
+}
+
+.wd-trending {
+  margin-left: 0px;
+  margin-top: 0;
+  padding-left: 16px;
+  display: flow-root;
+}
+
+.wd-trending-subinfo {
+  color: rgb(110, 118, 125);
+  font-size: 13px;
+  font-family: Arial, serif;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.wd-articles {
+  margin-top: 20px;
+}
+
+.wd-img-config {
+  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+  float: right;
+  margin: 10px 16px 10px 10px;
+}
+
+.wd-grid-two-third {
+  float: left;
+  width: 67%;
+}
+
+.wd-grid-one-third {
+  float: left;
+  width: 33%;
+}
+
+.wd-post-top-border {
+  border-top-color: rgb(47, 51, 54);
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+
+.wd-border-trending {
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(47, 51, 54);
+}
+
+.wd-img {
+  height: 48px;
+  width: 48px;
+  border-radius: 200%;
+}
