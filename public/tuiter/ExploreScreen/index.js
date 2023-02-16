@@ -1,4 +1,4 @@
-import PostSummaryList from "../PostSummaryList/index.js";
+import PostSummaryList from "../explore/PostSummaryList";
 
 const ExploreComponent = () => {
   return(`
@@ -34,7 +34,13 @@ const ExploreComponent = () => {
           </ul>
         </div>
        <!-- image with overlaid text -->
-       ${PostSummaryList()}
+        <div class="card bg-dark text-white mt-2">
+          <img class="card-img" src="spacex.webp" alt="Card image">
+            <div class="card-img-overlay">
+              <h1 class="card-title" style="margin-top: 60%;">SpaceX's Starship</h1>
+            </div>
+          ${PostSummaryList()}
+        </div>
     `);
 }
 export default ExploreComponent;

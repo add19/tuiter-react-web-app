@@ -95,6 +95,14 @@
   display: flow-root;
 }
 
+.wd-article-card {
+  border: solid 1px lightgrey !important;
+}
+
+.wd-icon-config {
+  color: darkgray;
+}
+
 .wd-trending-subinfo {
   color: rgb(110, 118, 125);
   font-size: 13px;
