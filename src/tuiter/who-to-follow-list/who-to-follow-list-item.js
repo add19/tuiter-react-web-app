@@ -1,4 +1,6 @@
 import React from "react";
+import {faCheckCircle} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 const WhoToFollowListItem = (
     {
       who = { userName: 'NASA', handle: 'NASA', avatarIcon: 'nasa.png' }
@@ -11,7 +13,8 @@ const WhoToFollowListItem = (
             <img className="rounded-circle" height={48} src={`/images/${who.avatarIcon}`}/>
           </div>
           <div className="col-8">
-            <div className="fw-bold">{who.userName}</div>
+            <div className="fw-bold">{who.userName} <FontAwesomeIcon color={"rgb(29,161,242)"} icon={faCheckCircle} />
+            </div>
             <div>@{who.handle}</div>
           </div>
           <div className="col-2">
