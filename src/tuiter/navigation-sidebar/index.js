@@ -5,12 +5,15 @@ import {useLocation} from "react-router";
 const NavigationSidebar = () => {
   const {pathname} = useLocation();
   const paths = pathname.split('/')
+
   const active = paths[2];
+  console.log(active);
+  console.log(pathname);
   return (
       <div className="list-group">
         <a className="list-group-item" href={"#"}>Tuiter</a>
-        <Link to="/tuiter/home" className={`list-group-item
-                    ${active === 'home'?'active':''}`} href={"#"}>
+        <Link to="/tuiter" className={`list-group-item
+                    ${(active === undefined || active === '')?'active':''}`} href={"#"}>
           Home
         </Link>
         <Link to="/tuiter/explore" className={`list-group-item
