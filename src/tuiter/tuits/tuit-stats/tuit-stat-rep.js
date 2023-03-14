@@ -1,9 +1,13 @@
 import {
   faHeart,
-  faComment,
   faRetweet,
   faShareNodes
 } from '@fortawesome/free-solid-svg-icons'
+
+import {
+  faComment,
+  faHeart as regularHeart
+} from '@fortawesome/free-regular-svg-icons'
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import React from "react";
@@ -43,7 +47,7 @@ const TuitItem = (
               </span>
           <span className="col-3">
                 <a onClick={() =>
-                    toggleLike(tuititem)}><FontAwesomeIcon color={ tuititem.liked ? "red" : "darkgray" } icon={tuititem.liked ? faHeart : faHeart} /></a><span> {tuititem.likes}</span>
+                    toggleLike(tuititem)}><FontAwesomeIcon color={ tuititem.liked ? "red" : "darkgray" } icon={tuititem.liked ? faHeart : regularHeart} /></a><span> {tuititem.likes}</span>
               </span>
           <span className="col-3">
                 <a><FontAwesomeIcon color={"darkgray"} icon={faShareNodes} /></a><span></span>
