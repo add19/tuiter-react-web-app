@@ -1,0 +1,15 @@
+[{
+  "_id": "123",
+  "firstName": "Aadish",
+  "lastName": "Deshpande",
+  "handle": "@aadish_d_19",
+  "profilePicture": "react.png",
+  "bannerPicture": "neu.jpeg",
+  "bio": "Software Engineer, Graduate Student at Northeastern University",
+  "website": "youtube.com/webdevtv",
+  "location": "Boston, MA",
+  "dateOfBirth": "September 1, 1998",
+  "dateJoined": "August 28, 2018",
+  "followingCount": 340,
+  "followersCount": 223
+}]
