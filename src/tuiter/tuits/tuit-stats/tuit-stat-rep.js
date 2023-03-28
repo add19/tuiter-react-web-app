@@ -29,6 +29,7 @@ const TuitItem = (
         "retweets": 432,
         "likes": 2345,
         "dislikes": 0,
+        "disliked": false,
         "handle": "@spacex",
         "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars. You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars",
         "image": "tesla.jpeg",
@@ -39,30 +40,32 @@ const TuitItem = (
   const toggleLike = (tuitStat) => {
     dispatch(updateTuitThunk({
       ...tuitStat,
-      likes: tuitStat.likes + 1
+      liked: !tuitStat.liked,
+      likes: (tuitStat.liked === true) ? tuitStat.likes - 1 : tuitStat.likes + 1
     }))
     // dispatch(todoLikeToggle(tuitStat));
   }
   const updateDislike = (tuitStat) => {
     dispatch(updateTuitThunk({
       ...tuitStat,
-      dislikes: tuitStat.dislikes + 1
+      disliked: !tuitStat.disliked,
+      dislikes: (tuitStat.disliked === true) ? tuitStat.dislikes - 1 : tuitStat.dislikes + 1
     }))
   }
   return (
       <>
         <div className="row ms-5 mt-3">
-              <span className="col-3">
+              <span className="col-2">
                 <a ><FontAwesomeIcon color={"darkgray"} icon={faComment} /></a><span> {tuititem.comments}</span>
               </span>
-          <span className="col-3">
+          <span className="col-2">
                 <a><FontAwesomeIcon color={"darkgray"} icon={faRetweet} /></a><span> {tuititem.retweets}</span>
               </span>
-          <span className="col-3">
+          <span className="col-2">
                 <a onClick={() =>
                     toggleLike(tuititem)}><FontAwesomeIcon color={ tuititem.liked ? "red" : "darkgray" } icon={tuititem.liked ? faHeart : regularHeart} /></a><span> {tuititem.likes}</span>
               </span>
-          <span className="col-1">
+          <span className="col-2">
                 <a><FontAwesomeIcon color={"darkgray"} icon={faShareNodes} /></a><span></span>
               </span>
           <span className="col-2">
