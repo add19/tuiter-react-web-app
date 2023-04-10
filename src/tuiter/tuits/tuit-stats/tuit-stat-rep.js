@@ -39,14 +39,17 @@ const TuitItem = (
   const toggleLike = (tuitStat) => {
     dispatch(updateTuitThunk({
       ...tuitStat,
-      likes: tuitStat.likes + 1
+      liked: !tuitStat.liked,
+      likes: (tuitStat.liked === true) ? tuitStat.likes - 1 : tuitStat.likes + 1
     }))
     // dispatch(todoLikeToggle(tuitStat));
   }
   const updateDislike = (tuitStat) => {
     dispatch(updateTuitThunk({
       ...tuitStat,
-      dislikes: tuitStat.dislikes + 1
+      _id: tuitStat._id,
+      disliked: !tuitStat.disliked,
+      dislikes: (tuitStat.disliked === true) ? (tuitStat.dislikes === undefined ? 1 : tuitStat.dislikes) - 1 : tuitStat.dislikes + 1
     }))
   }
   return (

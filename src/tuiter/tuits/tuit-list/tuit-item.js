@@ -21,6 +21,7 @@ const TuitItem = (
         "comments": 123,
         "retweets": 432,
         "likes": 2345,
+        "dislikes": 0,
         "handle": "@spacex",
         "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars. You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars",
         "image": "tesla.jpeg",
@@ -43,7 +44,7 @@ const TuitItem = (
           <div className="col-10">
             <span><b>{tuititem.userName}</b> <FontAwesomeIcon className={"wd-twitter-button"} icon={faCheckCircle} /></span>  <span className={"wd-time-handle-color"}>{tuititem.userHandle} .</span> <span className={"wd-time-handle-color"}>{tuititem.time}</span>
             <br/>
-            <span>{tuititem.tweet}</span>
+            <span>{tuititem.tuit}</span>
           </div>
           <div className="col-1">
             <i className="fa-solid fa-ellipsis pe-2"></i>

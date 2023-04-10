@@ -10,7 +10,7 @@ const WhatsHappening = () => {
   const tuitClickHandler = () => {
     console.log(whatsHappening);
     const newTuit = {
-      tweet: whatsHappening
+      tuit: whatsHappening
     }
     dispatch(createTuitThunk(newTuit));
   }
