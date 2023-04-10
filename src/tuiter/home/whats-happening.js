@@ -10,7 +10,16 @@ const WhatsHappening = () => {
   const tuitClickHandler = () => {
     console.log(whatsHappening);
     const newTuit = {
-      tuit: whatsHappening
+      tuit: whatsHappening,
+      topic: "Energy",
+      userName: "Tesla",
+      title: "Tesla FSD finally makes driving obsolete.",
+      time: "just now",
+      comments: 223,
+      retweets: 12000,
+      avatar: "spaceximg.jpeg",
+      handle: "@spacex",
+      image: "tesla.jpeg"
     }
     dispatch(createTuitThunk(newTuit));
   }
